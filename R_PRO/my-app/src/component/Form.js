@@ -1,10 +1,11 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 const FormeTest = () => {
-  const sub = (e) => {
-    e.preventDefult();
-    console.log(e);
+  const sub = (x) => {
+    x.preventDefault();
+    console.log(x);
   };
+  
   return (
     <div className="container">
       <Form onSubmit={sub}>
